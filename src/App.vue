@@ -1,13 +1,18 @@
 <template>
   <ion-app>
     <ion-router-outlet />
-    <Memo/>
   </ion-app>
 </template>
 
-<script setup lang="js">
+<script>
 import { IonApp, IonRouterOutlet } from '@ionic/vue';
-import Memo from './pages/Memo.vue';
+import { defineComponent } from 'vue';
 
+export default defineComponent({
+  name: 'App',
+  components: {
+    IonApp,
+    IonRouterOutlet
+  }
+});
 </script>
-
